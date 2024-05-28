@@ -38,3 +38,15 @@ This system leverages a combination of cutting-edge technologies and established
 - **JIRA API**: Used for tracking feature requests and bug reports, integrating directly with our project management workflow. This allows for seamless updates and tracking of issues raised by customers.
 
 These components and technologies work in concert to provide a responsive, accurate, and efficient support system that enhances the user experience and supports Mattermost's commitment to exceptional customer service.
+
+
+## Configuration
+Configure the environment variables by creating a .env file in the root directory:
+
+OPENAI_API_KEY='your-openai-api-key'
+OPENAI_ORGANIZATION_ID='your-openai-organization-id'
+SERPER_API_KEY='your-serper-api-key'
+JIRA_SERVER='your-jira-server'
+JIRA_EMAIL='your-jira-email'
+JIRA_API_TOKEN='your-jira-api-token'
+PROJECT_KEY='your-jira-project-key'
