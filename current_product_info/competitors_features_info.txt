@@ -1,0 +1,41 @@
+These are the features MatterMost's competitors have:
+
+Slack:
+
+Channels
+Direct Messaging
+Integrations with other tools (e.g., Google Drive, Trello)
+File Sharing
+Searchable Message History
+Custom Emojis
+Video and Voice Calls
+Slackbot and Custom Bots
+Workflow Automation
+Mobile and Desktop Apps
+Security Features (SSO, MFA)
+
+Microsoft Teams:
+
+Channels
+Direct Messaging
+Integration with Microsoft Office 365
+File Sharing and Collaboration
+Searchable Message History
+Video and Voice Calls
+Meeting Scheduling
+Mobile and Desktop Apps
+Security and Compliance (Data encryption, MFA)
+
+
+Rocket.Chat:
+
+Channels
+Direct Messaging
+Integrations with other tools (e.g., Jira, GitHub)
+File Sharing
+Searchable Message History
+Video and Voice Calls
+Custom Emojis
+Bots and Automations
+Mobile and Desktop Apps
+Security Features (LDAP, SSO)
