@@ -1,3 +1,5 @@
+#This is a mock knowledge-base I've created for the agent to RAG upon. In a production environment,
+it would be integrated with actual knowledge bases
 Product Name: Mattermost
 
 Description:
