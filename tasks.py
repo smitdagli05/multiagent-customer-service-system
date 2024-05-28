@@ -114,6 +114,5 @@ class CustomTasks:
                             "feature request or bug report extracted from the customer query.",
             output_pydantic=CustomerQuery,
             agent=agent,
-            async_execution=True
             callback=callback_function,
         )

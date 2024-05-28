@@ -1,2 +1,2 @@
 #This is a mock knowledge-base I've created for the agent to RAG upon. In a production environment,
-it would be integrated with actual knowledge bases
+it would be integrated with actual knowledge basesFeature Request: Google Drive Integration with Mattermost - Medium
