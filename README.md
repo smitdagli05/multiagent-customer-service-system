@@ -1,14 +1,18 @@
+## Overview
+
+This system is an end-to-end workflow that takes as input a customer support request, and generates an appropriate response to the inquiry, mimicking a senior support agent for the company/product. Additionally, it convert customer inquiries into product insights by automatically creating JIRA tickets for feature requests and bug reports based on the inquiry.
+
 ## Key Components
 
 ### Custom Agents
 
-Our system is built around three specialized agents, each tailored to fulfill a specific role within the support process:
+This system is built around three specialized agents, each tailored to fulfill a specific role within the support process:
 
-1. **Support Agent**: This agent acts as the frontline responder to all incoming customer queries. It accesses a detailed directory of current product information and customer feedback to provide precise and informed responses. The Support Agent uses advanced natural language processing techniques to understand and generate relevant responses, ensuring high customer satisfaction.
+1. **Support Agent**: This agent acts as the frontline responder to all incoming customer queries. It performs RAG on a detailed directory of current product information and customer feedback, in addition to internet searches to provide precise and informed responses. It can also perform RAG on a Github Repos, Code docs or PDF's if your knowledge base lives on these. For the purposes of this project, I created a mock knowledge base to simulate a response to a customer support request.
 
-2. **Support Quality Assurance Agent**: After the initial response, this agent reviews the draft to ensure that it meets Mattermost's high standards for accuracy and completeness. The Quality Assurance Agent also verifies that the response maintains a friendly and professional tone, enhancing the customer's experience.
+2. **Support Quality Assurance Agent**: After the initial response by the Support Agent, this agent reviews the draft to ensure that the final response to the customer is accurate, friendly and professional, enhancing the customer's experience. It verifies accuracy by making sure there's no hallucinations, by performing another RAG on the knowledge base. Additionally, if you have templates on how to respond to customer requests, you could also have this agent perform a RAG on the template to make sure the response adheres to your preferences.
 
-3. **Query Classifier Agent**: This agent classifies incoming queries into categories such as feature requests, bug reports, or general inquiries. It plays a crucial role in ensuring that customer feedback is appropriately routed, aiding in the swift and effective resolution of issues and the identification of potential improvements.
+3. **Query Classifier Agent**: This agent classifies incoming queries into categories such as feature requests, bug reports, or general inquiries, and automatically creates a JIRA ticket with a summary, description and issue type. You could additionally augment this to automatically assign it to a particular person on your team, based on the issue type/other parameters. It adds these requests to the knowledge base, for the other two agents to refer to. This agent ensures that customer requests are converted into actionable insights for your engineering and product teams, ensuring your product roadmap reflects customer needs.
 
 ### Custom Tasks
 
@@ -27,12 +31,10 @@ To support these agents and tasks, the system employs several integration tools:
 
 ## Technologies
 
-The Mattermost Support System leverages a combination of cutting-edge technologies and established software practices:
+This system leverages a combination of cutting-edge technologies and established software practices:
 
 - **crewai**: A versatile framework that allows for the creation, management, and execution of agent-based tasks. It provides the infrastructure for our agents, facilitating complex interactions and processes within our system.
 - **langchain_openai**: Integrates OpenAI's GPT models, specifically chosen for their state-of-the-art natural language processing capabilities. These models help in understanding customer queries and generating human-like responses.
-- **Python**: Chosen for its wide support and flexibility, Python serves as the foundation of our system, enabling rapid development and integration of various libraries and tools.
 - **JIRA API**: Used for tracking feature requests and bug reports, integrating directly with our project management workflow. This allows for seamless updates and tracking of issues raised by customers.
-- **Environment Variables and Configuration Management**: Utilizing libraries like `decouple` and `dotenv`, our system securely manages sensitive information, ensuring that API keys and other configurations are kept secure.
 
 These components and technologies work in concert to provide a responsive, accurate, and efficient support system that enhances the user experience and supports Mattermost's commitment to exceptional customer service.
