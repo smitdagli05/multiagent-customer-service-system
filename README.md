@@ -41,8 +41,10 @@ These components and technologies work in concert to provide a responsive, accur
 
 
 ## Configuration
-Configure the environment variables by creating a .env file in the root directory:
 
+Set up your environment variables by creating a `.env` file in your project directory and adding the following lines:
+
+```plaintext
 OPENAI_API_KEY='your-openai-api-key'
 OPENAI_ORGANIZATION_ID='your-openai-organization-id'
 SERPER_API_KEY='your-serper-api-key'
@@ -50,3 +52,14 @@ JIRA_SERVER='your-jira-server'
 JIRA_EMAIL='your-jira-email'
 JIRA_API_TOKEN='your-jira-api-token'
 PROJECT_KEY='your-jira-project-key'
+```
+
+Run the system by executing the main script:
+
+```
+python3 main.py
+
+```
+
+Follow the interactive prompts to enter the customer name and their inquiry. The system will process the inquiry and provide a detailed output.
+
