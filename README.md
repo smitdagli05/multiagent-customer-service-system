@@ -27,7 +27,7 @@ Each agent is assigned specific tasks that define their responsibilities:
 To support these agents and tasks, the system employs several integration tools:
 
 - **DirectorySearchTool**: Enables agents to quickly search through directories containing current product information and customer feedback, ensuring that all responses are backed by up-to-date data.
-- **SerperDevTool**: A development tool integrated into our system for enhanced performance and debugging capabilities, ensuring smooth operation of the agents during their tasks.
+- **SerperDevTool**: Enables agents to search the internet
 
 ## Configuration
 
