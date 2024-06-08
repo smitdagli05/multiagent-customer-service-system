@@ -29,17 +29,6 @@ To support these agents and tasks, the system employs several integration tools:
 - **DirectorySearchTool**: Enables agents to quickly search through directories containing current product information and customer feedback, ensuring that all responses are backed by up-to-date data.
 - **SerperDevTool**: A development tool integrated into our system for enhanced performance and debugging capabilities, ensuring smooth operation of the agents during their tasks.
 
-## Technologies
-
-This system leverages a combination of cutting-edge technologies and established software practices:
-
-- **crewai**: A versatile framework that allows for the creation, management, and execution of agent-based tasks. It provides the infrastructure for our agents, facilitating complex interactions and processes within our system.
-- **langchain_openai**: Integrates OpenAI's GPT models, specifically chosen for their state-of-the-art natural language processing capabilities. These models help in understanding customer queries and generating human-like responses.
-- **JIRA API**: Used for tracking feature requests and bug reports, integrating directly with our project management workflow. This allows for seamless updates and tracking of issues raised by customers.
-
-These components and technologies work in concert to provide a responsive, accurate, and efficient support system that enhances the user experience and supports Mattermost's commitment to exceptional customer service.
-
-
 ## Configuration
 
 Set up your environment variables by creating a `.env` file in your project directory and adding the following lines:
