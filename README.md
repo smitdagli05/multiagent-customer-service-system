@@ -2,6 +2,10 @@
 
 This system is an end-to-end workflow that takes as input a customer support request, and generates an appropriate response to the inquiry, mimicking a senior support agent for the company/product. Additionally, it convert customer inquiries into product insights by automatically creating JIRA tickets for feature requests and bug reports based on the inquiry.
 
+## Usecase
+
+Teams maintaining popular open-source projects are often under-resourced and perenially pressed for time. As a result, they lack the bandwith to satisfactorily address customer questions, and tend to miss product insights that arise from such questions/feedback. A production grade version of this tool would be helpful in such cases
+
 ## Key Components
 
 ### Custom Agents
