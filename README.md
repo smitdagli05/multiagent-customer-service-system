@@ -12,7 +12,7 @@ Teams maintaining popular open-source projects are often under-resourced and per
 
 This system is built around three specialized agents, each tailored to fulfill a specific role within the support process:
 
-1. **Support Agent**: This agent acts as the frontline responder to all incoming customer queries. It performs RAG on a detailed directory of current product information and customer feedback, in addition to internet searches to provide precise and informed responses. It can also perform RAG on a Github Repos, Code docs or PDF's if your knowledge base lives on these. For the purposes of this project, I created a mock knowledge base to simulate a response to a customer support request.
+1. **Support Agent**: This agent acts as the frontline responder to all incoming customer queries. It performs RAG on a detailed directory of current product information and customer feedback, in addition to internet searches to provide precise and informed responses. It can also perform RAG on a Github Repo, Code docs or PDF's if your knowledge base lives on these. For the purposes of this project, I created a mock knowledge base to simulate a response to a customer support request.
 
 2. **Support Quality Assurance Agent**: After the initial response by the Support Agent, this agent reviews the draft to ensure that the final response to the customer is accurate, friendly and professional, enhancing the customer's experience. It verifies accuracy by making sure there's no hallucinations, by performing another RAG on the knowledge base. Additionally, if you have templates on how to respond to customer requests, you could also have this agent perform a RAG on the template to make sure the response adheres to your preferences.
 
